@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Practice</title>
+  </head>
+  <body>
+    <h1>Some Practice Exercises</h1>
+    <script>
+
+      // FUNCTION DECLARATIONS
+      function add7(num) {
+        return num + 7;
+      }
+      function multiply(num1, num2) {
+        return num1 * num2;
+      }
+      function capitalize(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+      }
+      function lastLetter(string){
+        return string.slice(-1);
+      }
+
+      console.log(add7(3));
+      console.log(multiply(3, 7));
+      console.log(capitalize("aHmeD"));
+      console.log(lastLetter("afiarizavi"));
+
+      // FUNCTION EXPRESSIONS
+
+      let add7_exp = function(num) { return num + 7 };
+      let multiply_exp = function(num1, num2) { return num1 * num2 };
+      let capitalize_exp = function(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+      };
+      let lastLetter_exp = function(string) { return string.slice(-1) };
+      console.log(add7_exp(3));
+      console.log(multiply_exp(3, 7));
+      console.log(capitalize_exp("aHmeD"));
+      console.log(lastLetter_exp("afiarizavi"));
+
+      // ARROW FUNCTIONS
+
+      let add7_arr = (num) => num + 7;
+      let multiply_arr = (num1, num2) => num1 * num2;
+      let capitalize_arr = (string) => {
+        return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+      };
+
+      console.log(add7_arr(3));
+      console.log(multiply_arr(3, 7));
+      console.log(capitalize_arr("aHmeD"));
+
+    </script>
+  </body>
+</html>
